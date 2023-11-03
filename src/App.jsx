@@ -2,7 +2,16 @@ import React, { useState } from "react";
 import SelectInput from "./components/SelectInput";
 
 const App = () => {
-  const optionsArray = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  const optionsArray = [
+    "Option 1",
+    "Option 2",
+    "Option 3",
+    "Option 4",
+    "Option 1",
+    "Option 2",
+    "Option 3",
+    "Option 4",
+  ];
   const [selectedOption, setSelectedOption] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
