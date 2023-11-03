@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { AiOutlineDown } from "react-icons/ai";
 import OptionsList from "./OptionsList";
 
 const SelectInput = ({
@@ -25,10 +25,10 @@ const SelectInput = ({
 
       <span
         className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-transform duration-300 ${
-          isOpen ? "rotate-0" : "rotate-[-90deg]"
+          isOpen ? "-rotate-180" : "rotate-0"
         }`}
       >
-        <IoIosArrowDown className="text-gray-300" />
+        <AiOutlineDown className="text-gray-300" />
       </span>
 
       {isOpen && (

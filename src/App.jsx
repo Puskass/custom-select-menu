@@ -4,16 +4,16 @@ import SelectInput from "./components/SelectInput";
 const App = () => {
   const optionsArray = ["Option 1", "Option 2", "Option 3", "Option 4"];
   const [selectedOption, setSelectedOption] = useState("");
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleOptionSelect = (selectedOption) => {
     setSelectedOption(selectedOption);
-    setIsOpen(false)
+    setIsOpen(!isOpen);
   };
 
-  const openOption = ( ) => {
-    setIsOpen(true)
-  }
+  const openOption = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="min-h-screen flex justify-center items-center">
